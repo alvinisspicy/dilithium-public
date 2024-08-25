@@ -10,7 +10,7 @@ mod polyvec;
 mod randombytes;
 mod reduce;
 mod rounding;
-mod sign;
+pub mod sign;
 mod symmetric;
 pub use params::*;
 
