@@ -11,7 +11,6 @@ mod randombytes;
 mod reduce;
 mod rounding;
 pub mod sign;
-pub use sign::*;
 mod symmetric;
 pub use params::*;
 
@@ -19,3 +18,8 @@ pub use api::*;
 
 #[cfg(feature = "wasm")]
 mod wasm;
+
+pub use sign::{
+  crypto_sign_keypair as sign_keypair, crypto_sign_signature as sign_signature,
+  crypto_sign_verify as sign_verify,
+};
