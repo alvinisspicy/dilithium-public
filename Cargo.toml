@@ -12,8 +12,8 @@ exclude = ["tests/KAT"]
 rust-version = "1.50"
 
 [dependencies]
-rand_core = { version = "0.6.4",  default-features = false }
-getrandom = {version = "0.2.10", features = ["js"], optional = true }
+rand_core = { version = "0.6.4", default-features = false }
+getrandom = { version = "0.2.10", features = ["js"], optional = true }
 wasm-bindgen = { version = "0.2.87", optional = true }
 
 [dependencies.rand]
@@ -21,10 +21,10 @@ version = "0.8.5"
 features = ["getrandom"]
 
 [dev-dependencies]
-pqc_core = {version = "0.3.0", features = ["load"]}
+pqc_core = { version = "0.3.0", features = ["load"] }
 
 [target.'cfg(bench)'.dev-dependencies.criterion]
-criterion = "0.4.0"
+version = "0.4.0"
 
 [[bench]]
 name = "api"
